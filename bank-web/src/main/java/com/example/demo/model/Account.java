@@ -9,7 +9,9 @@ public class Account {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @JsonProperty("name")
     private String owner;
+
     private Double balance;
 
     // Getters and setters
