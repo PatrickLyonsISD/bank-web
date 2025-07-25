@@ -6,13 +6,12 @@ const AccountsPage = () => {
   const [accounts, setAccounts] = useState([]);
 
   // Fetch account data from backend on first render
-  useEffect(() => {
-    // Send GET request to backend API
-    fetch('http://192.168.1.5:8080/accounts')
-      .then((res) => res.json()) // Parse response as JSON
-      .then((data) => setAccounts(data)) // Store data in state
-      .catch((err) => console.error('Failed to fetch accounts:', err)); // Handle error
-  }, []); // Empty dependency array = run only once when component mounts
+useEffect(() => {
+  fetch(`${process.env.REACT_APP_API_BASE}/accounts`)
+    .then((res) => res.json())
+    .then((data) => setAccounts(data))
+    .catch((err) => console.error('Failed to fetch accounts:', err));
+}, []);
 
   // Render account table
   return (
