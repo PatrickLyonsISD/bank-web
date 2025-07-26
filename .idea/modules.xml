@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/bank-web/bank-ui/bank-ui.iml" filepath="$PROJECT_DIR$/bank-web/bank-ui/bank-ui.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/bank-web.iml" filepath="$PROJECT_DIR$/.idea/bank-web.iml" />
     </modules>
   </component>
